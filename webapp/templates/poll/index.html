@@ -3,5 +3,12 @@
 {% block title %}Главная{% endblock %}
 
 {% block content %}
-    <h1>LOST</h1>
+
+    <div class="list-group mt-3">
+    <h2>Вопросы</h2>
+        {% for poll in  poll_list %}
+        <a href="#" class="list-group-item list-group-item-info">{{ poll.question_text}}</a>
+        {% endfor %}
+    </div>
+
 {% endblock %}

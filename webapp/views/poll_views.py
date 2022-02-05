@@ -1,5 +1,8 @@
-from django.shortcuts import render
+from django.views.generic import ListView
+
+from webapp.models import Poll
 
 
-def index_view(request):
-    return render(request, 'poll/index.html')
+class PollsIndexView(ListView):
+    template_name = 'poll/index.html'
+    model = Poll
