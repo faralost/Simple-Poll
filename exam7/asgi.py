@@ -1,5 +1,5 @@
 """
-ASGI config for exam7 webapp.
+ASGI config for exam7 poll.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 

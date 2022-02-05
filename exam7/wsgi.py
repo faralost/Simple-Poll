@@ -1,5 +1,5 @@
 """
-WSGI config for exam7 webapp.
+WSGI config for exam7 poll.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
