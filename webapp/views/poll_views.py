@@ -9,12 +9,18 @@ class PollsIndexView(ListView):
     template_name = 'poll/index.html'
     model = Poll
     ordering = ['-created_at']
-    paginate_by = 7
+    paginate_by = 5
 
 
 class PollDetailView(DetailView):
     template_name = 'poll/detail.html'
     model = Poll
+
+    def get_context_data(self, **kwargs):
+        context = super(PollDetailView, self).get_context_data(**kwargs)
+        poll_choices = self.object.choices.all()
+        context['poll_choices'] = poll_choices
+        return context
 
 
 class PollAddView(CreateView):
