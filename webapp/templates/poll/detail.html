@@ -2,10 +2,6 @@
 
 {% block title %}Вопрос{% endblock %}
 
-{% block add-choice-nav %}
-    <li><a href="{% url 'poll_choice_add' poll.pk %}" class="nav-link px-2 text-white">Добавить ответ</a></li>
-{% endblock %}
-
 {% block content %}
 
     <div class="card mt-3">
@@ -22,24 +18,5 @@
     <br>
     <a class="btn btn-info" href="{% url 'poll_update' poll.pk %}">Изменить</a>
     <a class="btn btn-info" href="{% url 'poll_delete' poll.pk %}">Удалить</a>
-    <a class="btn btn-info" href="{% url 'answer_poll' poll.pk %}">Ответить</a>
-
-    {% if poll_choices %}
-        <br><br>
-        <h3>Варианты ответа:</h3>
-        <ol class="list-group list-group-numbered">
-            {% for choice in poll_choices %}
-                <li class="list-group-item">{{ choice.choice_text }}</li>
-                <div class="d-flex justify-content-start">
-                <div><a class="btn btn-warning" href="{% url 'poll_choice_update' choice.pk %}">Редактировать</a></div>
-                    &nbsp;
-                <div><a class="btn btn-warning" href="{% url 'poll_choice_delete' choice.pk %}">Удалить</a></div>
-                </div>
-            {% endfor %}
-        </ol>
-    {% else %}
-        <br><br>
-        <h3>У данного вопроса пока нет вариантов ответа</h3>
-    {% endif %}
 
 {% endblock %}

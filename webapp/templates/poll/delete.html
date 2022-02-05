@@ -4,7 +4,7 @@
 
 {% block content %}
     <div class="container">
-        <h2>Вы уверены что хотите удалить этот вопрос: <br> <i>{{ poll.question_text }}</i></h2>
+        <h2>Вы уверены что хотите удалить этот вопрос?</h2>
         <form action="{% url 'poll_delete' poll.pk %}" method="POST">
             {% csrf_token %}
             <button type="submit" class="btn btn-info">Удалить</button>
