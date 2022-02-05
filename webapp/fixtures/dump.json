@@ -1,0 +1,961 @@
+[
+{
+  "model": "webapp.poll",
+  "pk": 2,
+  "fields": {
+    "question_text": "What is the weather today?",
+    "created_at": "2022-02-05T05:48:53.170Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 3,
+  "fields": {
+    "question_text": "How old are you?",
+    "created_at": "2022-02-05T05:58:15.775Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 4,
+  "fields": {
+    "question_text": "What is the capital of Great Britain?",
+    "created_at": "2022-02-05T05:58:41.283Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 5,
+  "fields": {
+    "question_text": "Who is the president of Kyrgyzstan?",
+    "created_at": "2022-02-05T05:58:57.918Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 6,
+  "fields": {
+    "question_text": "The World War 2 started at?",
+    "created_at": "2022-02-05T06:03:22.121Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 7,
+  "fields": {
+    "question_text": "How are you?",
+    "created_at": "2022-02-05T06:21:09.759Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 8,
+  "fields": {
+    "question_text": "Which language do you like most?",
+    "created_at": "2022-02-05T06:21:31.201Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 9,
+  "fields": {
+    "question_text": "What are you learning now?",
+    "created_at": "2022-02-05T06:21:45.120Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 10,
+  "fields": {
+    "question_text": "What is your favorite movie?",
+    "created_at": "2022-02-05T06:22:05.701Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 11,
+  "fields": {
+    "question_text": "Which game do you know?",
+    "created_at": "2022-02-05T06:22:58.905Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 12,
+  "fields": {
+    "question_text": "Which place you would like to visit ?",
+    "created_at": "2022-02-05T06:23:25.889Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 13,
+  "fields": {
+    "question_text": "Which country do you think is most powerful?",
+    "created_at": "2022-02-05T06:24:05.246Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 14,
+  "fields": {
+    "question_text": "what plans do you have next?",
+    "created_at": "2022-02-05T06:26:55.856Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 15,
+  "fields": {
+    "question_text": "What anime title do you like most?",
+    "created_at": "2022-02-05T06:27:29.932Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 16,
+  "fields": {
+    "question_text": "What name is most beautiful ?",
+    "created_at": "2022-02-05T06:28:05.532Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 17,
+  "fields": {
+    "question_text": "How do you feel?",
+    "created_at": "2022-02-05T06:28:31.256Z"
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 1,
+  "fields": {
+    "choice_text": "Tashiev",
+    "question": 5
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 2,
+  "fields": {
+    "choice_text": "Zhaparov",
+    "question": 5
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 3,
+  "fields": {
+    "choice_text": "Putin",
+    "question": 5
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 4,
+  "fields": {
+    "choice_text": "Merkel",
+    "question": 5
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 5,
+  "fields": {
+    "choice_text": "Bishkek",
+    "question": 4
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 6,
+  "fields": {
+    "choice_text": "London",
+    "question": 4
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 7,
+  "fields": {
+    "choice_text": "Rome",
+    "question": 4
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 9,
+  "fields": {
+    "choice_text": "im fine",
+    "question": 3
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 10,
+  "fields": {
+    "choice_text": "15 celcius",
+    "question": 3
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 11,
+  "fields": {
+    "choice_text": "fifteen",
+    "question": 3
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 12,
+  "fields": {
+    "choice_text": "are u ok",
+    "question": 3
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 13,
+  "fields": {
+    "choice_text": "it's shining outside",
+    "question": 2
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 14,
+  "fields": {
+    "choice_text": "fifteen years old",
+    "question": 2
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 15,
+  "fields": {
+    "choice_text": "fine news",
+    "question": 2
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 16,
+  "fields": {
+    "choice_text": "1941",
+    "question": 6
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 17,
+  "fields": {
+    "choice_text": "1939",
+    "question": 6
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 18,
+  "fields": {
+    "choice_text": "1940",
+    "question": 6
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 19,
+  "fields": {
+    "choice_text": "1942",
+    "question": 6
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 20,
+  "fields": {
+    "choice_text": "very nice",
+    "question": 17
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 21,
+  "fields": {
+    "choice_text": "bad very",
+    "question": 17
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 22,
+  "fields": {
+    "choice_text": "test1",
+    "question": 17
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 23,
+  "fields": {
+    "choice_text": "Fara",
+    "question": 16
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 24,
+  "fields": {
+    "choice_text": "Eddy",
+    "question": 16
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 25,
+  "fields": {
+    "choice_text": "Petya",
+    "question": 16
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 26,
+  "fields": {
+    "choice_text": "Lost",
+    "question": 16
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 27,
+  "fields": {
+    "choice_text": "Naruto",
+    "question": 15
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 28,
+  "fields": {
+    "choice_text": "Demon Slayer",
+    "question": 15
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 29,
+  "fields": {
+    "choice_text": "Jujutsu Kaisen",
+    "question": 15
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 30,
+  "fields": {
+    "choice_text": "Attack of titans",
+    "question": 15
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 31,
+  "fields": {
+    "choice_text": "Kyrgyzstan",
+    "question": 13
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 32,
+  "fields": {
+    "choice_text": "Russia",
+    "question": 13
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 33,
+  "fields": {
+    "choice_text": "Usa",
+    "question": 13
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 34,
+  "fields": {
+    "choice_text": "England",
+    "question": 13
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 1,
+  "fields": {
+    "question": 17,
+    "created_at": "2022-02-05T09:48:59.635Z",
+    "choice": 22
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 2,
+  "fields": {
+    "question": 17,
+    "created_at": "2022-02-05T09:49:24.876Z",
+    "choice": 22
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 3,
+  "fields": {
+    "question": 17,
+    "created_at": "2022-02-05T09:49:34.671Z",
+    "choice": 20
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 4,
+  "fields": {
+    "question": 5,
+    "created_at": "2022-02-05T09:49:57.488Z",
+    "choice": 2
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 5,
+  "fields": {
+    "question": 2,
+    "created_at": "2022-02-05T09:50:46.026Z",
+    "choice": 15
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 6,
+  "fields": {
+    "question": 5,
+    "created_at": "2022-02-05T09:50:53.208Z",
+    "choice": 2
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 7,
+  "fields": {
+    "question": 5,
+    "created_at": "2022-02-05T09:51:01.805Z",
+    "choice": 4
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 8,
+  "fields": {
+    "question": 17,
+    "created_at": "2022-02-05T09:53:58.910Z",
+    "choice": 20
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 9,
+  "fields": {
+    "question": 3,
+    "created_at": "2022-02-05T09:54:27.860Z",
+    "choice": 10
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 10,
+  "fields": {
+    "question": 3,
+    "created_at": "2022-02-05T09:54:29.712Z",
+    "choice": 9
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 11,
+  "fields": {
+    "question": 3,
+    "created_at": "2022-02-05T09:54:31.509Z",
+    "choice": 11
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 12,
+  "fields": {
+    "question": 3,
+    "created_at": "2022-02-05T09:54:33.175Z",
+    "choice": 11
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 13,
+  "fields": {
+    "question": 13,
+    "created_at": "2022-02-05T10:20:11.248Z",
+    "choice": 31
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 14,
+  "fields": {
+    "question": 13,
+    "created_at": "2022-02-05T10:20:13.211Z",
+    "choice": 32
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 15,
+  "fields": {
+    "question": 13,
+    "created_at": "2022-02-05T10:20:14.777Z",
+    "choice": 34
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 16,
+  "fields": {
+    "question": 13,
+    "created_at": "2022-02-05T10:20:17.159Z",
+    "choice": 33
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 17,
+  "fields": {
+    "question": 13,
+    "created_at": "2022-02-05T10:20:19.859Z",
+    "choice": 31
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 18,
+  "fields": {
+    "question": 13,
+    "created_at": "2022-02-05T10:20:21.913Z",
+    "choice": 31
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 19,
+  "fields": {
+    "question": 13,
+    "created_at": "2022-02-05T10:20:23.763Z",
+    "choice": 34
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 20,
+  "fields": {
+    "question": 13,
+    "created_at": "2022-02-05T10:20:26.526Z",
+    "choice": 33
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 21,
+  "fields": {
+    "question": 15,
+    "created_at": "2022-02-05T10:20:46.232Z",
+    "choice": 27
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 22,
+  "fields": {
+    "question": 15,
+    "created_at": "2022-02-05T10:20:52.912Z",
+    "choice": 27
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 23,
+  "fields": {
+    "question": 15,
+    "created_at": "2022-02-05T10:20:55.062Z",
+    "choice": 27
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 24,
+  "fields": {
+    "question": 15,
+    "created_at": "2022-02-05T10:24:17.490Z",
+    "choice": 27
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 25,
+  "fields": {
+    "question": 15,
+    "created_at": "2022-02-05T10:24:19.546Z",
+    "choice": 28
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 26,
+  "fields": {
+    "question": 15,
+    "created_at": "2022-02-05T10:24:21.212Z",
+    "choice": 28
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 27,
+  "fields": {
+    "question": 15,
+    "created_at": "2022-02-05T10:24:23.827Z",
+    "choice": 29
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 28,
+  "fields": {
+    "question": 15,
+    "created_at": "2022-02-05T10:24:26.010Z",
+    "choice": 29
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 29,
+  "fields": {
+    "question": 15,
+    "created_at": "2022-02-05T10:24:27.690Z",
+    "choice": 30
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 30,
+  "fields": {
+    "question": 15,
+    "created_at": "2022-02-05T10:24:29.179Z",
+    "choice": 30
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 31,
+  "fields": {
+    "question": 15,
+    "created_at": "2022-02-05T10:24:30.778Z",
+    "choice": 30
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 32,
+  "fields": {
+    "question": 15,
+    "created_at": "2022-02-05T10:24:32.274Z",
+    "choice": 30
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 33,
+  "fields": {
+    "question": 15,
+    "created_at": "2022-02-05T10:24:33.743Z",
+    "choice": 30
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 34,
+  "fields": {
+    "question": 15,
+    "created_at": "2022-02-05T10:24:35.243Z",
+    "choice": 30
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 35,
+  "fields": {
+    "question": 15,
+    "created_at": "2022-02-05T10:24:36.795Z",
+    "choice": 29
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 36,
+  "fields": {
+    "question": 15,
+    "created_at": "2022-02-05T10:24:38.741Z",
+    "choice": 29
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 37,
+  "fields": {
+    "question": 15,
+    "created_at": "2022-02-05T10:54:26.000Z",
+    "choice": 27
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 38,
+  "fields": {
+    "question": 15,
+    "created_at": "2022-02-05T10:54:27.973Z",
+    "choice": 27
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 39,
+  "fields": {
+    "question": 15,
+    "created_at": "2022-02-05T11:01:55.712Z",
+    "choice": 27
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 40,
+  "fields": {
+    "question": 15,
+    "created_at": "2022-02-05T11:01:58.911Z",
+    "choice": 30
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 41,
+  "fields": {
+    "question": 17,
+    "created_at": "2022-02-05T11:55:01.485Z",
+    "choice": 20
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 42,
+  "fields": {
+    "question": 17,
+    "created_at": "2022-02-05T11:55:03.901Z",
+    "choice": 20
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 43,
+  "fields": {
+    "question": 17,
+    "created_at": "2022-02-05T11:55:06.081Z",
+    "choice": 21
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 44,
+  "fields": {
+    "question": 17,
+    "created_at": "2022-02-05T11:55:10.651Z",
+    "choice": 22
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 45,
+  "fields": {
+    "question": 17,
+    "created_at": "2022-02-05T11:55:12.479Z",
+    "choice": 21
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 46,
+  "fields": {
+    "question": 2,
+    "created_at": "2022-02-05T11:55:36.699Z",
+    "choice": 13
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 47,
+  "fields": {
+    "question": 2,
+    "created_at": "2022-02-05T11:55:38.977Z",
+    "choice": 14
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 48,
+  "fields": {
+    "question": 2,
+    "created_at": "2022-02-05T11:55:42.131Z",
+    "choice": 15
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 49,
+  "fields": {
+    "question": 2,
+    "created_at": "2022-02-05T11:55:44.484Z",
+    "choice": 15
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 50,
+  "fields": {
+    "question": 2,
+    "created_at": "2022-02-05T11:55:46.399Z",
+    "choice": 15
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 51,
+  "fields": {
+    "question": 5,
+    "created_at": "2022-02-05T11:56:34.803Z",
+    "choice": 1
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 52,
+  "fields": {
+    "question": 5,
+    "created_at": "2022-02-05T11:56:39.113Z",
+    "choice": 1
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 53,
+  "fields": {
+    "question": 5,
+    "created_at": "2022-02-05T11:56:40.930Z",
+    "choice": 1
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 54,
+  "fields": {
+    "question": 16,
+    "created_at": "2022-02-05T12:19:36.576Z",
+    "choice": 23
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 55,
+  "fields": {
+    "question": 16,
+    "created_at": "2022-02-05T12:19:41.342Z",
+    "choice": 23
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 56,
+  "fields": {
+    "question": 16,
+    "created_at": "2022-02-05T12:19:43.453Z",
+    "choice": 24
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 57,
+  "fields": {
+    "question": 16,
+    "created_at": "2022-02-05T12:19:48.358Z",
+    "choice": 24
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 58,
+  "fields": {
+    "question": 16,
+    "created_at": "2022-02-05T12:19:51.038Z",
+    "choice": 24
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 59,
+  "fields": {
+    "question": 16,
+    "created_at": "2022-02-05T12:19:55.320Z",
+    "choice": 23
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 60,
+  "fields": {
+    "question": 16,
+    "created_at": "2022-02-05T12:19:58.174Z",
+    "choice": 26
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 61,
+  "fields": {
+    "question": 15,
+    "created_at": "2022-02-05T12:37:03.705Z",
+    "choice": 27
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 62,
+  "fields": {
+    "question": 15,
+    "created_at": "2022-02-05T12:37:05.981Z",
+    "choice": 27
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 63,
+  "fields": {
+    "question": 15,
+    "created_at": "2022-02-05T12:37:09.800Z",
+    "choice": 30
+  }
+}
+]

@@ -19,6 +19,12 @@ class PollChoiceAddView(CreateView):
     def get_success_url(self):
         return reverse("poll_detail_view", kwargs={"pk": self.object.question.pk})
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        question = get_object_or_404(Poll, pk=self.kwargs.get("pk"))
+        context['question'] = question
+        return context
+
 
 class PollChoiceUpdate(UpdateView):
     form_class = ChoiceForm
