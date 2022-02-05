@@ -29,6 +29,11 @@
         <ol class="list-group list-group-numbered">
             {% for choice in poll_choices %}
                 <li class="list-group-item">{{ choice.choice_text }}</li>
+                <div class="d-flex justify-content-start">
+                <div><a class="btn btn-warning" href="{% url 'poll_choice_update' choice.pk %}">Редактировать</a></div>
+                    &nbsp;
+                <div><a class="btn btn-warning" href="{% url 'poll_choice_update' choice.pk %}">Удалить</a></div>
+                </div>
             {% endfor %}
         </ol>
     {% else %}
@@ -37,6 +42,3 @@
     {% endif %}
 
 {% endblock %}
-
-{#            <a class="mylink" href="{% url 'task_delete' task.pk %}">Удалить</a> &nbsp;#}
-{#            <a class="mylink" href="{% url 'task_update' task.pk %}">Редактировать</a>#}
