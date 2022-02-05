@@ -1,4 +1,5 @@
-from django.views.generic import ListView, DetailView, CreateView, UpdateView
+from django.urls import reverse_lazy
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 
 from webapp.forms import PollForm
 from webapp.models import Poll
@@ -26,3 +27,9 @@ class PollUpdateView(UpdateView):
     template_name = 'poll/update.html'
     form_class = PollForm
     model = Poll
+
+
+class PollDeleteView(DeleteView):
+    template_name = 'poll/delete.html'
+    model = Poll
+    success_url = reverse_lazy('index')

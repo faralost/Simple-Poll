@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Удаление вопроса{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h2>Вы уверены что хотите удалить этот вопрос?</h2>
+        <form action="{% url 'poll_delete' poll.pk %}" method="POST">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-info">Удалить</button>
+            <br>
+            <br>
+            <p><a class="btn btn-info" href="{% url "poll_detail_view" poll.pk %}">Не удалять</a></p>
+        </form>
+    </div>
+{% endblock %}

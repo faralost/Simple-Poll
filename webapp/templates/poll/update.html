@@ -3,8 +3,10 @@
 {% block title %}Редактирование вопроса{% endblock %}
 
 {% block content %}
-        <h2>Редактирование проекта</h2>
-        <form method="post">
-            {% include "partial/form.html" with button_text="Изменить"  %}
-        </form>
+    <h2>Редактирование проекта</h2>
+    <form method="post">
+        {% include "partial/form.html" with button_text="Изменить" %}
+    </form>
+    <br>
+    <a class="btn btn-info" href="{% url 'poll_detail_view' poll.pk %}">Не изменять</a>
 {% endblock %}
