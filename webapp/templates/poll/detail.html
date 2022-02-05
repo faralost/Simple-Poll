@@ -19,4 +19,20 @@
     <a class="btn btn-info" href="{% url 'poll_update' poll.pk %}">Изменить</a>
     <a class="btn btn-info" href="{% url 'poll_delete' poll.pk %}">Удалить</a>
 
+    {% if poll_choices %}
+        <br><br>
+        <h3>Варианты ответа:</h3>
+        <ol class="list-group list-group-numbered">
+            {% for choice in poll_choices %}
+                <li class="list-group-item">{{ choice.choice_text }}</li>
+            {% endfor %}
+        </ol>
+    {% else %}
+        <br><br>
+        <h3>У данного вопроса пока нет вариантов ответа</h3>
+    {% endif %}
+
 {% endblock %}
+
+                {#            <a class="mylink" href="{% url 'task_delete' task.pk %}">Удалить</a> &nbsp;#}
+                {#            <a class="mylink" href="{% url 'task_update' task.pk %}">Редактировать</a>#}

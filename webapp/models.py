@@ -19,7 +19,7 @@ class Poll(models.Model):
 
 class Choice(models.Model):
     choice_text = models.CharField(max_length=250, verbose_name='Ответ')
-    question = models.ForeignKey('webapp.Poll', on_delete=models.CASCADE)
+    question = models.ForeignKey('webapp.Poll', on_delete=models.CASCADE, related_name='choices', verbose_name='Вопрос')
 
     class Meta:
         verbose_name = 'Ответ'
