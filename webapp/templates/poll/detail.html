@@ -2,6 +2,10 @@
 
 {% block title %}Вопрос{% endblock %}
 
+{% block add-choice-nav %}
+    <li><a href="{% url 'poll_choice_add' poll.pk %}" class="nav-link px-2 text-white">Добавить ответ</a></li>
+{% endblock %}
+
 {% block content %}
 
     <div class="card mt-3">
@@ -34,5 +38,5 @@
 
 {% endblock %}
 
-                {#            <a class="mylink" href="{% url 'task_delete' task.pk %}">Удалить</a> &nbsp;#}
-                {#            <a class="mylink" href="{% url 'task_update' task.pk %}">Редактировать</a>#}
+{#            <a class="mylink" href="{% url 'task_delete' task.pk %}">Удалить</a> &nbsp;#}
+{#            <a class="mylink" href="{% url 'task_update' task.pk %}">Редактировать</a>#}

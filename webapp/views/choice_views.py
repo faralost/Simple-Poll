@@ -1,6 +1,6 @@
 from django.shortcuts import get_object_or_404
-from django.urls import reverse, reverse_lazy
-from django.views.generic import CreateView, UpdateView, DeleteView
+from django.urls import reverse
+from django.views.generic import CreateView
 
 from webapp.forms import ChoiceForm
 from webapp.models import Choice, Poll
@@ -15,29 +15,6 @@ class PollChoiceAddView(CreateView):
         question = get_object_or_404(Poll, pk=self.kwargs.get("pk"))
         form.instance.question = question
         return super().form_valid(form)
-
-    def get_success_url(self):
-        return reverse("poll_detail_view", kwargs={"pk": self.object.question.pk})
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        question = get_object_or_404(Poll, pk=self.kwargs.get("pk"))
-        context['question'] = question
-        return context
-
-
-class PollChoiceUpdate(UpdateView):
-    form_class = ChoiceForm
-    template_name = 'choice/update.html'
-    model = Choice
-
-    def get_success_url(self):
-        return reverse("poll_detail_view", kwargs={"pk": self.object.question.pk})
-
-
-class PollChoiceDelete(DeleteView):
-    template_name = 'choice/delete.html'
-    model = Choice
 
     def get_success_url(self):
         return reverse("poll_detail_view", kwargs={"pk": self.object.question.pk})
