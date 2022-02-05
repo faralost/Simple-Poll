@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Ответить на вопрос{% endblock %}
+
+{% block content %}
+    <div class="alert alert-success mt-3" role="alert">
+        {{ question.question_text }}
+    </div>
+    <form action="{% url 'answer_poll' question.pk%}" method="POST">
+    {% csrf_token %}
+    <input type="hidden" name="next" value="{{ request.path }}">
+    {% for choice in poll_choices %}
+        <div class="form-check">
+            <input class="form-check-input" type="radio" value="{{ choice.pk }}" name="choice_pk">
+            <label class="form-check-label" for="answer">
+                {{ choice }}
+            </label>
+        </div>
+    {% endfor %}
+    <br>
+        <button type="submit" class="btn btn-info">Ответить</button>
+    </form>
+{% endblock %}
