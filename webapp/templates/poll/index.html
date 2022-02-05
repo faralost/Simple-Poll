@@ -5,10 +5,19 @@
 {% block content %}
 
     <div class="list-group mt-3">
-    <h2>Вопросы</h2>
+        <h2>Вопросы</h2>
+        {% if is_paginated %}
+            {% include 'partial/pagination.html' %}
+        {% endif %}
         {% for poll in  poll_list %}
-        <a href="#" class="list-group-item list-group-item-info">{{ poll.question_text}}</a>
+            <a href="{{ poll.get_absolute_url }}"
+               class="list-group-item list-group-item-info">{{ poll.question_text.title }}</a>
         {% endfor %}
+        <br>
+        {% if is_paginated %}
+            {% include 'partial/pagination.html' %}
+        {% endif %}
+
     </div>
 
 {% endblock %}

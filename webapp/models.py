@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 
 class Poll(models.Model):
@@ -11,6 +12,9 @@ class Poll(models.Model):
 
     def __str__(self):
         return f'{self.question_text}'
+
+    def get_absolute_url(self):
+        return reverse('poll_detail_view', kwargs={'pk': self.pk})
 
 
 class Choice(models.Model):
