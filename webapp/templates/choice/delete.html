@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Удаление ответа{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h2>Вы уверены что хотите удалить этот ответ: <br> <i>{{ choice.choice_text }}</i></h2>
+        <form action="{% url 'poll_choice_delete' choice.pk %}" method="POST">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-info">Удалить</button>
+            <br>
+            <br>
+            <p><a class="btn btn-info" href="{% url "poll_detail_view" choice.question.pk %}">Не удалять</a></p>
+        </form>
+    </div>
+{% endblock %}

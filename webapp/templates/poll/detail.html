@@ -32,7 +32,7 @@
                 <div class="d-flex justify-content-start">
                 <div><a class="btn btn-warning" href="{% url 'poll_choice_update' choice.pk %}">Редактировать</a></div>
                     &nbsp;
-                <div><a class="btn btn-warning" href="{% url 'poll_choice_update' choice.pk %}">Удалить</a></div>
+                <div><a class="btn btn-warning" href="{% url 'poll_choice_delete' choice.pk %}">Удалить</a></div>
                 </div>
             {% endfor %}
         </ol>
