@@ -15,5 +15,7 @@
             {{ poll.created_at }}
         </div>
     </div>
+    <br>
+    <a class="btn btn-info" href="{% url 'poll_update' poll.pk %}">Изменить</a>
 
 {% endblock %}

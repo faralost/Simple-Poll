@@ -1,4 +1,4 @@
-from django.views.generic import ListView, DetailView, CreateView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView
 
 from webapp.forms import PollForm
 from webapp.models import Poll
@@ -18,5 +18,11 @@ class PollDetailView(DetailView):
 
 class PollAddView(CreateView):
     template_name = 'poll/create.html'
+    form_class = PollForm
+    model = Poll
+
+
+class PollUpdateView(UpdateView):
+    template_name = 'poll/update.html'
     form_class = PollForm
     model = Poll

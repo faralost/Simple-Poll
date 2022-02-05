@@ -2,9 +2,11 @@
 
 {% block title %}Добавление вопроса{% endblock %}
 
+{% block add-poll-nav %}{% endblock %}
+
 {% block content %}
     <br>
-        <form method="post">
-            {% include 'partial/form.html' with button_text='Добавить' %}
-        </form>
+    <form method="post">
+        {% include 'partial/form.html' with button_text='Добавить' %}
+    </form>
 {% endblock %}
