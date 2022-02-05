@@ -1,7 +1,8 @@
 from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+from django.views.generic.edit import FormMixin
 
-from webapp.forms import PollForm
+from webapp.forms import PollForm, ChoiceForm
 from webapp.models import Poll
 
 
@@ -12,9 +13,10 @@ class PollsIndexView(ListView):
     paginate_by = 5
 
 
-class PollDetailView(DetailView):
+class PollDetailView(FormMixin, DetailView):
     template_name = 'poll/detail.html'
     model = Poll
+    form_class = ChoiceForm
 
     def get_context_data(self, **kwargs):
         context = super(PollDetailView, self).get_context_data(**kwargs)
